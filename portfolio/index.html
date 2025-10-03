@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf03b83908.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">VINOTHA.</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="main-container">
+            <div>
+                <h3>ASPIRING FRONTEND DEVELOPER</h3>
+                <h1>HI,I'M VINOTHA FROM
+                    INDIA
+                </h1>
+                <a href="img/Vinotha resume(2).pdf" download class="btn">DOWNLOAD CV</a>
+            </div>
+            <div class="image-container"><img src="img/img4.jpg" alt="img"></div>
+        </div>
+    </section>
+
+    <div id="about">
+        <div class="c3ontainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/img5.jpg" alt="img">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="subtitle">ABOUT ME</h1>
+                    <p>Hi, I'm an aspiring Frontend Developer with a passion for design.
+                        I love creating clean, user-friendly websites and interfaces.
+                        I'm skilled in HTML, CSS, JavaScript, and responsive design.
+                        I also enjoy working on UI/UX using Figma, Canva, and Adobe tools.
+                        Design and code go hand in hand for me to build great user experiences.
+                        I'm always learning<br> and excited to grow in the web development world.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Frontend Development</span><br>Designing website interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Blue Silicon Infotech Pvt Lmt</span><br>Web Development Internship</li>
+                            <li><span>Year</span><br>2024</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ethiraj Arts and Science college</span><br>Bsc Computer Science</li>
+                            <li><span>Secured</span><br>78%</li>
+                            <li><span>Sri Saradha Vidhyalaya Higher Secondary School</span><br>SSLC</li>
+                            <li><span>Secured</span><br>85%</li>
+                            <li><span>Sri Saradha Vidhyalaya Higher Secondary School</span><br>HSC</li>
+                            <li><span>Secured</span><br>75%</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services---------->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>i have developed a frontend websites and post it on github</p>
+                    <a href="#">SEE NOW</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-ungroup"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>i have developed a UI/UX Designs and post it on github</p>
+                    <a href="#">SEE NOW</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>College Projects</h2>
+                    <p>i have developed a frontend websites in college and post it on github</p>
+                    <a href="#">SEE NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title"> Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i>vinothachinnadurai28@gmail.com</i></p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+971 522456059</p>
+                    <div class="social-icons">
+                        <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="sumbit" class="btn btn2">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ vinotha</p>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRAKduZLMQ5UAgP96MaiIHJaDPLMrVPYmiEjZxQc4xKIyHsh5oTFrTRI6U_vTL2fmcKw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
